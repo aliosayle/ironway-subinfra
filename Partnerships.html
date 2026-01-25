@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Partnerships | Ironway Subinfra Limited | Industrial AI Integration & Engineering</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+        :root {
+            --primary: #3b82f6;
+            --bg-dark: #050507;
+            --surface: #0f0f12;
+            --border: rgba(255, 255, 255, 0.08);
+            --glass: rgba(255, 255, 255, 0.03);
+        }
+
+        body {
+            background-color: var(--bg-dark);
+            color: #e4e4e7;
+            font-family: 'Inter', sans-serif;
+            scroll-behavior: smooth;
+            overflow-x: hidden;
+        }
+
+        .font-mono { font-family: 'JetBrains Mono', monospace; }
+
+        /* Shared Component Styling */
+        .data-grid {
+            border: 1px solid var(--border);
+            background: var(--surface);
+        }
+
+        .nav-blur {
+            backdrop-filter: blur(20px);
+            background: rgba(5, 5, 7, 0.9);
+            border-bottom: 1px solid var(--border);
+        }
+
+        .pulse-ticker {
+            background: #000;
+            border-bottom: 1px solid var(--border);
+            overflow: hidden;
+            white-space: nowrap;
+        }
+
+        .ticker-scroll {
+            display: inline-block;
+            animation: scroll 80s linear infinite;
+        }
+
+        @keyframes scroll {
+            from { transform: translateX(0); }
+            to { transform: translateX(-50%); }
+        }
+
+        .status-tag {
+            font-size: 8px;
+            padding: 2px 6px;
+            border-radius: 2px;
+            text-transform: uppercase;
+            font-weight: 700;
+            letter-spacing: 0.1em;
+            background: rgba(59, 130, 246, 0.1);
+            color: var(--primary);
+            border: 1px solid rgba(59, 130, 246, 0.2);
+        }
+
+        .comparison-table th, .comparison-table td {
+            border: 1px solid var(--border);
+            padding: 1rem;
+            text-align: left;
+            font-size: 0.75rem;
+        }
+
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar { width: 4px; }
+        ::-webkit-scrollbar-track { background: var(--bg-dark); }
+        ::-webkit-scrollbar-thumb { background: #27272a; }
+    </style>
+</head>
+<body class="antialiased">
+
+    <div class="pulse-ticker sticky top-0 z-[60] py-2 text-[9px] font-mono uppercase tracking-[0.2em] text-zinc-500">
+        <div class="ticker-scroll">
+            <span>SYNCING WITH GLOBAL INTELLIGENCE NODES...</span>
+            <span class="mx-12">|</span>
+            <span class="text-blue-500">INDUSTRY COVERAGE UPDATED: Q4 2025</span>
+            <span class="mx-12">|</span>
+            <span>OPERATIONAL STATUS: NOMINAL</span>
+            <span class="mx-12">|</span>
+        </div>
+    </div>
+
+   <!-- Navigation -->
+    <nav class="sticky top-[30px] z-50 nav-blur px-6 md:px-12 py-4 flex justify-between items-center">
+
+        <div class="flex items-center gap-3 cursor-pointer" onclick="window.scrollTo({top:0, behavior:'smooth'})">
+            <div class="w-7 h-7 bg-blue-600 rounded flex items-center justify-center font-bold italic text-white shadow-lg text-xs">ISL</div>
+            <span class="text-lg font-bold tracking-tight uppercase">Ironway Subinfra</span>
+        </div>
+        <div class="hidden lg:flex gap-8 text-[10px] font-bold uppercase tracking-[0.2em] text-zinc-500">
+            <a href="index.html" class="nav-item hover:text-blue-500 transition-colors">Engineering</a>
+            <a href="Capabilities.html" class="nav-item hover:text-blue-500 transition-colors">Capabilities</a>
+            <a href="Partnerships.html" class="nav-item hover:text-blue-500 transition-colors">Partnerships</a>
+            <a href="Insights.html" class="nav-item hover:text-blue-500 transition-colors">Insights</a>
+            <a href="contact.html" class="nav-item hover:text-blue-500 transition-colors">Contact US</a>
+        </div>
+     <button onclick="toggleMobileMenu()" class="lg:hidden text-white">
+  <i data-lucide="menu" class="w-6 h-6"></i>
+</button>
+
+
+    </nav>
+<div id="mobile-menu" class="hidden fixed inset-0 bg-black/95 z-[200] p-8">
+<button onclick="toggleMobileMenu()" class="lg:hidden text-white">
+  <span class="text-2xl">☰</span>
+  <i data-lucide="menu" class="w-6 h-6 hidden"></i>
+</button>
+
+
+  <nav class="flex flex-col gap-6 mt-20 text-lg uppercase font-bold tracking-widest text-zinc-300">
+    <a href="index.html">Engineering</a>
+    <a href="Capabilities.html">Capabilities</a>
+    <a href="Partnerships.html">Partnerships</a>
+    <a href="Insights.html">Insights</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</div>
+
+    <header class="pt-32 pb-20 px-6 md:px-12 max-w-7xl mx-auto">
+        <div class="inline-flex items-center gap-2 px-3 py-1 rounded bg-zinc-900/90 border border-zinc-700 text-zinc-300 text-[9px] font-mono mb-8 uppercase tracking-widest">
+            <span class="w-1.5 h-1.5 bg-blue-500 rounded-full animate-pulse"></span>
+            High-complexity operational environments
+        </div>
+        <h1 class="text-6xl md:text-8xl font-bold tracking-tighter text-white mb-8">
+            Industries
+        </h1>
+        <p class="text-xl md:text-2xl text-zinc-400 max-w-3xl font-medium leading-relaxed">
+            We work with firms where integration complexity and compliance demands are high. Industry context determines data constraints, risk profile and deployment patterns.
+        </p>
+        <p class="text-[10px] font-mono text-zinc-600 mt-6 uppercase tracking-[0.2em]">Industry coverage updated: Q4 2025</p>
+    </header>
+
+    <main class="max-w-7xl mx-auto px-6 md:px-12 space-y-40 pb-32">
+
+        <section id="software-digital" class="grid grid-cols-1 lg:grid-cols-12 gap-12" data-aos="fade-up">
+            <div class="lg:col-span-5">
+                <div class="flex gap-2 mb-6">
+                    <span class="status-tag">Design</span><span class="status-tag">Build</span><span class="status-tag">Run</span>
+                </div>
+                <h2 class="text-3xl font-bold text-white uppercase tracking-tighter mb-6">Software and Digital Services</h2>
+                <p class="text-zinc-400 text-sm leading-relaxed mb-8">
+                    Developer productivity, customer operations, IT service management and knowledge management integration.
+                </p>
+                <div class="data-grid p-6 rounded-lg font-mono text-[10px] text-zinc-500 space-y-2">
+                    <p class="text-blue-500">// INTEGRATION_STACK_V4</p>
+                    <p>SYSTEMS: Jira, ServiceNow, Confluence, GitHub</p>
+                    <p>CONSTRAINTS: Data residency, OAuth2.0, API Rate limits</p>
+                </div>
+            </div>
+            <div class="lg:col-span-7 grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="data-grid p-8 rounded">
+                    <h4 class="text-[10px] font-mono text-zinc-500 uppercase mb-4 tracking-widest">Landscape & Tooling</h4>
+                    <ul class="text-xs space-y-3 text-zinc-300 list-disc pl-4">
+                        <li>SDLC lifecycle orchestration</li>
+                        <li>Automated IT Service Management (ITSM)</li>
+                        <li>Internal documentation and knowledge bases</li>
+                        <li>Tier-1 customer support platforms</li>
+                    </ul>
+                </div>
+                <div class="data-grid p-8 rounded border-l-2 border-l-blue-600">
+                    <h4 class="text-[10px] font-mono text-zinc-500 uppercase mb-4 tracking-widest">Risk & Compliance</h4>
+                    <ul class="text-xs space-y-3 text-zinc-400 font-mono">
+                        <li>[AUDIT] Secret scanning in code</li>
+                        <li>[PII] Tokenized customer logs</li>
+                        <li>[TRACE] Agent decision logs</li>
+                        <li>[SLA] 99.9% API availability</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="manufacturing-industrial" class="grid grid-cols-1 lg:grid-cols-12 gap-12" data-aos="fade-up">
+            <div class="lg:col-span-5">
+                <div class="flex gap-2 mb-6">
+                    <span class="status-tag">Deploy</span><span class="status-tag">Run</span>
+                </div>
+                <h2 class="text-3xl font-bold text-white uppercase tracking-tighter mb-6">Manufacturing and Industrial Operations</h2>
+                <p class="text-zinc-400 text-sm leading-relaxed mb-8">
+                    Maintenance support, SOP guidance, quality workflows, shift handovers and documentation acceleration.
+                </p>
+                <div class="bg-blue-600/5 border border-blue-500/20 p-6 rounded-lg">
+                    <h4 class="text-[10px] font-bold text-blue-500 uppercase mb-3 tracking-widest">Operational Requirement</h4>
+                    <p class="text-xs text-zinc-300 leading-relaxed">System must maintain functionality in offline or degraded network environments via edge node deployment.</p>
+                </div>
+            </div>
+            <div class="lg:col-span-7 grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="data-grid p-8 rounded">
+                    <h4 class="text-[10px] font-mono text-zinc-500 uppercase mb-4 tracking-widest">Operational Context</h4>
+                    <ul class="text-xs space-y-3 text-zinc-300 list-disc pl-4">
+                        <li>OT / IT air-gapped separation protocols</li>
+                        <li>Role-based access (Technician vs Supervisor)</li>
+                        <li>Shift continuity and handover summaries</li>
+                        <li>Real-time SOP retrieval for asset maintenance</li>
+                    </ul>
+                </div>
+                <div class="data-grid p-8 rounded border-l-2 border-l-blue-600">
+                    <h4 class="text-[10px] font-mono text-zinc-500 uppercase mb-4 tracking-widest">Support Areas</h4>
+                    <ul class="text-xs space-y-3 text-zinc-400 font-mono">
+                        <li>[OT] SCADA data ingestion</li>
+                        <li>[SOP] Interactive manual navigation</li>
+                        <li>[QA] Quality escape documentation</li>
+                        <li>[SHIFT] Handover acceleration</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="admin-shared" class="grid grid-cols-1 lg:grid-cols-12 gap-12" data-aos="fade-up">
+            <div class="lg:col-span-5">
+                <div class="flex gap-2 mb-6">
+                    <span class="status-tag">Design</span><span class="status-tag">Build</span><span class="status-tag">Deploy</span>
+                </div>
+                <h2 class="text-3xl font-bold text-white uppercase tracking-tighter mb-6">Administration and Shared Services</h2>
+                <p class="text-zinc-400 text-sm leading-relaxed mb-8">
+                    Document-heavy processes, intake automation, approvals support and reporting acceleration.
+                </p>
+                
+            </div>
+            <div class="lg:col-span-7 grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="data-grid p-8 rounded">
+                    <h4 class="text-[10px] font-mono text-zinc-500 uppercase mb-4 tracking-widest">Workflow Components</h4>
+                    <ul class="text-xs space-y-3 text-zinc-300 list-disc pl-4">
+                        <li>Intake pipelines for multi-format requests</li>
+                        <li>Multi-level approval chains (HITL)</li>
+                        <li>Policy-driven document verification</li>
+                        <li>Financial and regulatory reporting runs</li>
+                    </ul>
+                </div>
+                <div class="data-grid p-8 rounded border-l-2 border-l-blue-600">
+                    <h4 class="text-[10px] font-mono text-zinc-500 uppercase mb-4 tracking-widest">Compliance Signals</h4>
+                    <ul class="text-xs space-y-3 text-zinc-400 font-mono">
+                        <li>[AUDIT] Verifiable audit trails</li>
+                        <li>[RET] Retention policy enforcement</li>
+                        <li>[AUTH] SAML/SSO integration</li>
+                        <li>[VAL] Data integrity verification</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="logistics-supply" class="grid grid-cols-1 lg:grid-cols-12 gap-12" data-aos="fade-up">
+            <div class="lg:col-span-5">
+                <div class="flex gap-2 mb-6">
+                    <span class="status-tag">Build</span><span class="status-tag">Run</span>
+                </div>
+                <h2 class="text-3xl font-bold text-white uppercase tracking-tighter mb-6">Logistics and Supply Chain</h2>
+                <p class="text-zinc-400 text-sm leading-relaxed mb-8">
+                    Exception handling, documentation workflows, procurement support and status communication.
+                </p>
+                <div class="artifact-box bg-zinc-900 border border-zinc-800 p-4 font-mono text-[10px] text-zinc-400">
+                    <p class="text-zinc-600"># EXCEPTION_LOG_E42</p>
+                    <p>TYPE: Multi-system mismatch</p>
+                    <p>STATUS: Auto-summarized for dispatcher</p>
+                    <p>LATENCY: < 200ms detection</p>
+                </div>
+            </div>
+            <div class="lg:col-span-7 grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="data-grid p-8 rounded">
+                    <h4 class="text-[10px] font-mono text-zinc-500 uppercase mb-4 tracking-widest">Integration Constraints</h4>
+                    <ul class="text-xs space-y-3 text-zinc-300 list-disc pl-4">
+                        <li>Multi-system handoffs (ERP -> WMS -> TMS)</li>
+                        <li>Time-sensitive exception resolution</li>
+                        <li>Supplier-facing communication flows</li>
+                        <li>Full cargo and event traceability</li>
+                    </ul>
+                </div>
+                <div class="data-grid p-8 rounded border-l-2 border-l-blue-600">
+                    <h4 class="text-[10px] font-mono text-zinc-500 uppercase mb-4 tracking-widest">Deployment Signals</h4>
+                    <ul class="text-xs space-y-3 text-zinc-400 font-mono">
+                        <li>[API] REST/gRPC/EDI integration</li>
+                        <li>[GEO] Regional latency monitoring</li>
+                        <li>[SLA] Throughput thresholds</li>
+                        <li>[SEC] Zero-trust architecture</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="regulated-environments" class="grid grid-cols-1 lg:grid-cols-12 gap-12" data-aos="fade-up">
+            <div class="lg:col-span-5">
+                <div class="flex gap-2 mb-6">
+                    <span class="status-tag">Design</span><span class="status-tag">Run</span>
+                </div>
+                <h2 class="text-3xl font-bold text-white uppercase tracking-tighter mb-6">Regulated Environments</h2>
+                <p class="text-zinc-400 text-sm leading-relaxed mb-8">
+                    Audit trails, access control, evaluation, documentation and policy alignment.
+                </p>
+                <div class="p-4 border border-zinc-800 rounded-lg">
+                    <div class="text-[9px] font-bold text-zinc-500 mb-2 uppercase tracking-widest">Control Mapping</div>
+                    <div class="w-full bg-zinc-900 h-1.5 rounded-full overflow-hidden">
+                        <div class="bg-blue-600 h-full w-[85%]"></div>
+                    </div>
+                    <p class="text-[9px] text-zinc-500 mt-2 font-mono">POLICY_TO_CONTROL_VERIFIED: 85%</p>
+                </div>
+            </div>
+            <div class="lg:col-span-7 grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="data-grid p-8 rounded">
+                    <h4 class="text-[10px] font-mono text-zinc-500 uppercase mb-4 tracking-widest">Governance Framework</h4>
+                    <ul class="text-xs space-y-3 text-zinc-300 list-disc pl-4">
+                        <li>Evidence retention for 7+ years</li>
+                        <li>Model evaluation gating checkpoints</li>
+                        <li>Policy-to-control technical mapping</li>
+                        <li>Regulatory audit-ready exports</li>
+                    </ul>
+                </div>
+                <div class="data-grid p-8 rounded border-l-2 border-l-blue-600">
+                    <h4 class="text-[10px] font-mono text-zinc-500 uppercase mb-4 tracking-widest">Operational Indicators</h4>
+                    <ul class="text-xs space-y-3 text-zinc-400 font-mono">
+                        <li>[SEC] AES-256 data at rest</li>
+                        <li>[LOG] Tamper-proof event logging</li>
+                        <li>[ISO] ISO/IEC 42001 alignment</li>
+                        <li>[HITL] Approval attribution</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <section class="py-32 bg-zinc-950 border-y border-zinc-900 overflow-x-auto">
+        <div class="max-w-7xl mx-auto px-6 md:px-12">
+            <h2 class="text-4xl font-bold text-white tracking-tighter uppercase mb-16">Cross-Industry Operational Characteristics</h2>
+            <table class="w-full comparison-table text-zinc-400 font-mono">
+                <thead>
+                    <tr class="bg-zinc-900/50 text-white uppercase">
+                        <th>Dimension</th>
+                        <th>Digital Services</th>
+                        <th>Manufacturing</th>
+                        <th>Admin/Shared</th>
+                        <th>Logistics</th>
+                        <th>Regulated</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Data Sensitivity</td>
+                        <td>Medium / PII</td>
+                        <td>High / IP</td>
+                        <td>High / Financial</td>
+                        <td>Medium / Ops</td>
+                        <td>Critical / PII</td>
+                    </tr>
+                    <tr>
+                        <td>Change Tolerance</td>
+                        <td>High / Agile</td>
+                        <td>Low / Scheduled</td>
+                        <td>Medium / Sync</td>
+                        <td>Low / Real-time</td>
+                        <td>Minimal / Gated</td>
+                    </tr>
+                    <tr>
+                        <td>Human Oversight</td>
+                        <td>Sampling</td>
+                        <td>Critical Paths</td>
+                        <td>Approval Gates</td>
+                        <td>Exception Only</td>
+                        <td>Full Attribution</td>
+                    </tr>
+                    <tr>
+                        <td>Audit Depth</td>
+                        <td>Operational</td>
+                        <td>Safety/Safety</td>
+                        <td>Financial/Policy</td>
+                        <td>Traceability</td>
+                        <td>Regulatory/Full</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <section class="py-32 px-6 md:px-12 max-w-7xl mx-auto">
+        <h2 class="text-4xl font-bold text-white tracking-tighter uppercase mb-16">Operational Signals Across Industries</h2>
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+            <div class="data-grid p-8 rounded-lg">
+                <div class="text-[10px] font-mono text-zinc-500 mb-2">ACTIVE ENVIRONMENTS</div>
+                <div class="text-3xl font-bold text-white">124</div>
+                <div class="text-[9px] text-zinc-600 mt-4 uppercase">Across 5 Industry Groups</div>
+            </div>
+            <div class="data-grid p-8 rounded-lg">
+                <div class="text-[10px] font-mono text-zinc-500 mb-2">APPROVAL LATENCY</div>
+                <div class="text-3xl font-bold text-white">0.4h</div>
+                <div class="text-[9px] text-zinc-600 mt-4 uppercase">Average Shared Services</div>
+            </div>
+            <div class="data-grid p-8 rounded-lg">
+                <div class="text-[10px] font-mono text-zinc-500 mb-2">EVAL FREQUENCY</div>
+                <div class="text-3xl font-bold text-white">Daily</div>
+                <div class="text-[9px] text-zinc-600 mt-4 uppercase">Continuous Regulated QA</div>
+            </div>
+            <div class="data-grid p-8 rounded-lg">
+                <div class="text-[10px] font-mono text-zinc-500 mb-2">DOC VOLUME</div>
+                <div class="text-3xl font-bold text-white">10M+</div>
+                <div class="text-[9px] text-zinc-600 mt-4 uppercase">Indexed Operational Artifacts</div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-32 px-6 md:px-12 text-center bg-zinc-900/30 border-t border-zinc-900">
+        <h2 class="text-4xl md:text-5xl font-bold text-white tracking-tighter uppercase mb-6">Industry Context Shapes Architecture</h2>
+        <p class="text-zinc-400 max-w-2xl mx-auto mb-12 text-lg">
+            Effective integration depends on understanding operational realities, regulatory constraints and system maturity within each industry.
+        </p>
+        <a href="contact.html" class="inline-flex items-center gap-3 px-10 py-5 bg-blue-600 rounded font-bold text-xs uppercase tracking-[0.2em] text-white hover:bg-blue-700 transition-all shadow-xl shadow-blue-900/20">
+            Request Industry Review <i data-lucide="arrow-right" class="w-4 h-4"></i>
+        </a>
+    </section>
+
+    <footer class="border-t border-[#262626] bg-[#0a0a0a] pt-20 pb-10 px-6">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-20">
+                <div class="col-span-1 md:col-span-1">
+                    <div class="flex items-center gap-3 mb-6">
+                        <div class="w-7 h-7 bg-white flex items-center justify-center rounded-[2px]">
+                            <span class="text-[#0a0a0a] font-black text-[10px] leading-none">ISL</span>
+                        </div>
+                        <span class="font-mono font-bold tracking-tighter text-sm uppercase text-white">Ironway Subinfra</span>
+                    </div>
+                    <p class="text-[10px] text-[#444444] leading-relaxed uppercase tracking-widest">
+                        Production-grade AI systems <br />
+                        for industrial operations.
+                    </p>
+                </div>
+                <div>
+                    <h4 class="text-white text-[10px] font-black uppercase tracking-[0.2em] mb-6">Capabilities</h4>
+                    <ul class="text-[#555555] text-[10px] font-bold uppercase tracking-widest space-y-4">
+                        <li><a href="Capabilities.html#llm-orchestration" class="hover:text-white transition-colors">Integration</a></li>
+                        <li><a href="Capabilities.html#governance" class="hover:text-white transition-colors">Governance</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white text-[10px] font-black uppercase tracking-[0.2em] mb-6">Industries</h4>
+                    <ul class="text-[#555555] text-[10px] font-bold uppercase tracking-widest space-y-4">
+                        <li><a href="#manufacturing-industrial" class="hover:text-white transition-colors">Manufacturing</a></li>
+                        <li><a href="#regulated-environments" class="hover:text-white transition-colors">Regulated</a></li>
+                    </ul>
+                </div>
+                <div class="text-right md:text-left">
+                    <h4 class="text-white text-[10px] font-black uppercase tracking-[0.2em] mb-6">Connection</h4>
+                    <p class="text-[#888888] font-mono text-xs mb-2">engineering@ironwaysubinfra.com</p>
+                    <p class="text-[#444444] font-mono text-[10px] uppercase">Node: US-EAST-01</p>
+                </div>
+            </div>
+            <div class="pt-8 border-t border-[#1a1a1a] flex flex-col md:flex-row justify-between items-center gap-6">
+                <div class="flex items-center gap-6 text-[9px] font-mono text-[#444444] uppercase tracking-[0.2em]">
+                    <span>© <script>document.write(new Date().getFullYear())</script> IRONWAY SUBINFRA LIMITED</span>
+                    <span class="hidden md:inline">//</span>
+                    <span>All Systems Nominal</span>
+                </div>
+                <div class="flex items-center gap-4">
+                    <div class="flex items-center gap-2 px-3 py-1 bg-[#0d0d0d] border border-[#262626] rounded-sm text-emerald-500 font-mono text-[9px]">
+                        <span class="w-1.5 h-1.5 bg-emerald-500 rounded-full animate-pulse"></span>
+                        SYSTEM_STABLE
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+function toggleMobileMenu() {
+  document.getElementById('mobile-menu').classList.toggle('hidden');
+}
+</script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        window.onload = () => {
+            AOS.init({ duration: 800, once: true });
+            lucide.createIcons();
+        };
+    </script>
+</body>
+</html>

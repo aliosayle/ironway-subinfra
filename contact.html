@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Ironway Subinfra Limited | Industrial AI Integration & Engineering</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+        :root {
+            --primary: #3b82f6;
+            --bg-dark: #050507;
+            --surface: #0f0f12;
+            --border: rgba(255, 255, 255, 0.08);
+            --glass: rgba(255, 255, 255, 0.03);
+        }
+
+        body {
+            background-color: var(--bg-dark);
+            color: #e4e4e7;
+            font-family: 'Inter', sans-serif;
+            scroll-behavior: smooth;
+            overflow-x: hidden;
+        }
+
+        .font-mono { font-family: 'JetBrains Mono', monospace; }
+
+        .data-grid {
+            border: 1px solid var(--border);
+            background: var(--surface);
+        }
+
+        .nav-blur {
+            backdrop-filter: blur(20px);
+            background: rgba(5, 5, 7, 0.9);
+            border-bottom: 1px solid var(--border);
+        }
+
+        .pulse-ticker {
+            background: #000;
+            border-bottom: 1px solid var(--border);
+            overflow: hidden;
+            white-space: nowrap;
+        }
+
+        .ticker-scroll {
+            display: inline-block;
+            animation: scroll 80s linear infinite;
+        }
+
+        @keyframes scroll {
+            from { transform: translateX(0); }
+            to { transform: translateX(-50%); }
+        }
+
+        .form-input {
+            background: #0a0a0c;
+            border: 1px solid var(--border);
+            color: #e4e4e7;
+            font-size: 0.875rem;
+            transition: border-color 0.2s ease;
+        }
+
+        .form-input:focus {
+            outline: none;
+            border-color: var(--primary);
+        }
+
+        .section-divider {
+            border-top: 1px solid var(--border);
+            margin: 4rem 0;
+        }
+
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar { width: 4px; }
+        ::-webkit-scrollbar-track { background: var(--bg-dark); }
+        ::-webkit-scrollbar-thumb { background: #27272a; }
+    </style>
+</head>
+<body class="antialiased">
+
+    <div class="pulse-ticker sticky top-0 z-[60] py-2 text-[9px] font-mono uppercase tracking-[0.2em] text-zinc-500">
+        <div class="ticker-scroll">
+            <span>AVERAGE RESPONSE TIME: 1–2 BUSINESS DAYS</span>
+            <span class="mx-12">|</span>
+            <span>SYSTEM STATUS: INTAKE NODES OPERATIONAL</span>
+            <span class="mx-12">|</span>
+            <span class="text-blue-500">ARCHITECTURE REVIEWS BY APPOINTMENT</span>
+            <span class="mx-12">|</span>
+            <span>ENCRYPTION: AES-256 ACTIVE</span>
+            <span class="mx-12">|</span>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="sticky top-[30px] z-50 nav-blur px-6 md:px-12 py-4 flex justify-between items-center">
+
+        <div class="flex items-center gap-3 cursor-pointer" onclick="window.scrollTo({top:0, behavior:'smooth'})">
+            <div class="w-7 h-7 bg-blue-600 rounded flex items-center justify-center font-bold italic text-white shadow-lg text-xs">ISL</div>
+            <span class="text-lg font-bold tracking-tight uppercase">Ironway Subinfra</span>
+        </div>
+        <div class="hidden lg:flex gap-8 text-[10px] font-bold uppercase tracking-[0.2em] text-zinc-500">
+            <a href="index.html" class="nav-item hover:text-blue-500 transition-colors">Engineering</a>
+            <a href="Capabilities.html" class="nav-item hover:text-blue-500 transition-colors">Capabilities</a>
+            <a href="Partnerships.html" class="nav-item hover:text-blue-500 transition-colors">Partnerships</a>
+            <a href="Insights.html" class="nav-item hover:text-blue-500 transition-colors">Insights</a>
+            <a href="contact.html" class="nav-item hover:text-blue-500 transition-colors">Contact US</a>
+        </div>
+     <button onclick="toggleMobileMenu()" class="lg:hidden text-white">
+  <i data-lucide="menu" class="w-6 h-6"></i>
+</button>
+
+
+    </nav>
+<div id="mobile-menu" class="hidden fixed inset-0 bg-black/95 z-[200] p-8">
+<button onclick="toggleMobileMenu()" class="lg:hidden text-white">
+  <span class="text-2xl">☰</span>
+  <i data-lucide="menu" class="w-6 h-6 hidden"></i>
+</button>
+
+
+  <nav class="flex flex-col gap-6 mt-20 text-lg uppercase font-bold tracking-widest text-zinc-300">
+    <a href="index.html">Engineering</a>
+    <a href="Capabilities.html">Capabilities</a>
+    <a href="Partnerships.html">Partnerships</a>
+    <a href="Insights.html">Insights</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</div>
+
+    <header class="pt-32 pb-20 px-6 md:px-12 max-w-7xl mx-auto">
+        <div class="inline-flex items-center gap-2 px-3 py-1 rounded bg-zinc-900/90 border border-zinc-700 text-zinc-300 text-[9px] font-mono mb-8 uppercase tracking-widest">
+            <span class="w-1.5 h-1.5 bg-blue-500 rounded-full animate-pulse"></span>
+            Architecture reviews by appointment
+        </div>
+        <h1 class="text-6xl md:text-8xl font-bold tracking-tighter text-white mb-8">
+            Talk to Ironway Subinfra Limited.
+        </h1>
+        <p class="text-xl md:text-2xl text-zinc-400 max-w-3xl font-medium leading-relaxed">
+            Share your systems, constraints and target workflows. We will respond with a structured discovery format and a practical integration pathway.
+        </p>
+        <p class="text-[10px] font-mono text-zinc-600 mt-6 uppercase tracking-[0.2em]">Average response time: 1–2 business days</p>
+    </header>
+
+    <main class="max-w-7xl mx-auto px-6 md:px-12 pb-32">
+        
+        <section class="mb-32">
+            <h2 class="text-[10px] font-bold uppercase tracking-[0.2em] text-zinc-500 mb-10">How we can engage</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="data-grid p-8 rounded-lg flex flex-col justify-between">
+                    <div>
+                        <h3 class="text-white font-bold text-lg mb-4">Enterprise & Integration</h3>
+                        <p class="text-xs text-zinc-400 leading-relaxed">For organisations exploring, piloting, deploying, or scaling AI systems. Structured architecture review and deployment planning.</p>
+                    </div>
+                    <a href="#enterprise-form" class="mt-8 text-[10px] text-blue-500 font-bold uppercase tracking-widest">Detailed Inquiry Form &rarr;</a>
+                </div>
+                <div class="data-grid p-8 rounded-lg flex flex-col justify-between">
+                    <div>
+                        <h3 class="text-white font-bold text-lg mb-4">Internships & Career</h3>
+                        <p class="text-xs text-zinc-400 leading-relaxed">For students and early professionals. Emphasis on learning, engineering discipline, and supervision.</p>
+                    </div>
+                    <a href="#intern-form" class="mt-8 text-[10px] text-blue-500 font-bold uppercase tracking-widest">Application Portal &rarr;</a>
+                </div>
+                <div class="data-grid p-8 rounded-lg flex flex-col justify-between">
+                    <div>
+                        <h3 class="text-white font-bold text-lg mb-4">General Questions</h3>
+                        <p class="text-xs text-zinc-400 leading-relaxed">For local users, partners, or general non-project enquiries. Simple contact fallback.</p>
+                    </div>
+                    <a href="#general-enquiry" class="mt-8 text-[10px] text-blue-500 font-bold uppercase tracking-widest">General Fallback &rarr;</a>
+                </div>
+            </div>
+        </section>
+
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-16 items-start">
+            
+            <div class="lg:col-span-8 space-y-32">
+                
+                <section id="enterprise-form" class="scroll-mt-32">
+                    <h2 class="text-3xl font-bold text-white uppercase tracking-tighter mb-8">Integration & Architecture Inquiry</h2>
+                    <form class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div class="flex flex-col gap-2">
+                            <label class="text-[10px] uppercase font-bold text-zinc-500 tracking-widest">Name</label>
+                            <input type="text" class="form-input p-3 rounded" required>
+                        </div>
+                        <div class="flex flex-col gap-2">
+                            <label class="text-[10px] uppercase font-bold text-zinc-500 tracking-widest">Organisation</label>
+                            <input type="text" class="form-input p-3 rounded" required>
+                        </div>
+                        <div class="flex flex-col gap-2">
+                            <label class="text-[10px] uppercase font-bold text-zinc-500 tracking-widest">Role</label>
+                            <input type="text" class="form-input p-3 rounded" required>
+                        </div>
+                        <div class="flex flex-col gap-2">
+                            <label class="text-[10px] uppercase font-bold text-zinc-500 tracking-widest">Email</label>
+                            <input type="email" class="form-input p-3 rounded" required>
+                        </div>
+                        <div class="flex flex-col gap-2">
+                            <label class="text-[10px] uppercase font-bold text-zinc-500 tracking-widest">Industry</label>
+                            <input type="text" class="form-input p-3 rounded">
+                        </div>
+                        <div class="flex flex-col gap-2">
+                            <label class="text-[10px] uppercase font-bold text-zinc-500 tracking-widest">Current stage</label>
+                            <select class="form-input p-3 rounded">
+                                <option>exploring</option>
+                                <option>piloting</option>
+                                <option>deploying</option>
+                                <option>scaling</option>
+                            </select>
+                        </div>
+                        <div class="md:col-span-2 flex flex-col gap-2">
+                            <label class="text-[10px] uppercase font-bold text-zinc-500 tracking-widest">Systems in scope</label>
+                            <input type="text" class="form-input p-3 rounded" placeholder="e.g. ERP, SCADA, CRM, Custom DB">
+                        </div>
+                        <div class="md:col-span-2 flex flex-col gap-2">
+                            <label class="text-[10px] uppercase font-bold text-zinc-500 tracking-widest">Data sensitivity</label>
+                            <input type="text" class="form-input p-3 rounded">
+                        </div>
+                        <div class="md:col-span-2 flex flex-col gap-2">
+                            <label class="text-[10px] uppercase font-bold text-zinc-500 tracking-widest">Areas of interest</label>
+                            <input type="text" class="form-input p-3 rounded">
+                        </div>
+                        <div class="md:col-span-2 flex flex-col gap-2">
+                            <label class="text-[10px] uppercase font-bold text-zinc-500 tracking-widest">Success criteria</label>
+                            <input type="text" class="form-input p-3 rounded">
+                        </div>
+                        <div class="md:col-span-2 flex flex-col gap-2">
+                            <label class="text-[10px] uppercase font-bold text-zinc-500 tracking-widest">Message</label>
+                            <textarea class="form-input p-3 rounded h-32"></textarea>
+                            <p class="text-[9px] text-zinc-600 uppercase mt-2">Please avoid sharing confidential information in this form. If you require an NDA before sharing details, indicate this in your message.</p>
+                        </div>
+                        <div class="md:col-span-2 mt-4">
+                            <button type="submit" class="w-full md:w-auto px-12 py-4 bg-blue-600 text-white text-[10px] font-bold uppercase tracking-[0.2em] rounded hover:bg-blue-700 transition-all">Submit Architecture Inquiry</button>
+                            <p class="text-[9px] text-zinc-600 font-mono mt-3 uppercase">Submissions are reviewed by an engineering lead.</p>
+                        </div>
+                    </form>
+                </section>
+
+                <div class="section-divider"></div>
+
+                <section id="intern-form" class="scroll-mt-32">
+                    <h2 class="text-3xl font-bold text-white uppercase tracking-tighter mb-4">Internships & Early-Career Applications</h2>
+                    <p class="text-xs text-zinc-500 mb-10">Internships are supervised and focused on real delivery work under defined constraints.</p>
+                    <form class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div class="flex flex-col gap-2">
+                            <label class="text-[10px] uppercase font-bold text-zinc-500 tracking-widest">Name</label>
+                            <input type="text" class="form-input p-3 rounded" required>
+                        </div>
+                        <div class="flex flex-col gap-2">
+                            <label class="text-[10px] uppercase font-bold text-zinc-500 tracking-widest">Email</label>
+                            <input type="email" class="form-input p-3 rounded" required>
+                        </div>
+                        <div class="flex flex-col gap-2">
+                            <label class="text-[10px] uppercase font-bold text-zinc-500 tracking-widest">Area of interest</label>
+                            <select class="form-input p-3 rounded">
+                                <option>engineering</option>
+                                <option>operations</option>
+                                <option>governance</option>
+                                <option>research</option>
+                            </select>
+                        </div>
+                        <div class="flex flex-col gap-2">
+                            <label class="text-[10px] uppercase font-bold text-zinc-500 tracking-widest">Availability period</label>
+                            <input type="text" class="form-input p-3 rounded">
+                        </div>
+                        <div class="md:col-span-2 flex flex-col gap-2">
+                            <label class="text-[10px] uppercase font-bold text-zinc-500 tracking-widest">Education / Background</label>
+                            <input type="text" class="form-input p-3 rounded">
+                        </div>
+                        <div class="md:col-span-2 flex flex-col gap-2">
+                            <label class="text-[10px] uppercase font-bold text-zinc-500 tracking-widest">Short motivation message</label>
+                            <textarea class="form-input p-3 rounded h-24"></textarea>
+                        </div>
+                        <div class="md:col-span-2">
+                            <button type="submit" class="px-12 py-4 bg-zinc-800 text-white text-[10px] font-bold uppercase tracking-[0.2em] rounded hover:bg-zinc-700 transition-all">Submit Application</button>
+                        </div>
+                    </form>
+                </section>
+            </div>
+
+            <div class="lg:col-span-4 space-y-16 lg:sticky lg:top-48">
+                
+                <section id="general-enquiry">
+                    <h3 class="text-[10px] font-bold uppercase tracking-[0.2em] text-zinc-500 mb-6">General Enquiries</h3>
+                    <p class="text-sm text-zinc-300 font-mono mb-2">contact@ironwaysubinfra.com</p>
+                    <p class="text-[9px] text-zinc-600 uppercase font-mono">(Replace with real email.)</p>
+                </section>
+
+                <section>
+                    <h3 class="text-[10px] font-bold uppercase tracking-[0.2em] text-zinc-500 mb-6">Availability</h3>
+                    <div class="text-sm space-y-2">
+                        <div class="flex justify-between border-b border-zinc-900 pb-2">
+                            <span class="text-zinc-500 uppercase font-bold tracking-tighter text-[11px]">Mon–Fri</span>
+                            <span class="text-zinc-300">09:00–17:00 (CET)</span>
+                        </div>
+                        <p class="text-[10px] text-zinc-500 mt-4 leading-relaxed italic">Responses outside business hours may be delayed. Peak inquiry volume typically occurs mid-week.</p>
+                    </div>
+                </section>
+
+                <section>
+                    <h3 class="text-[10px] font-bold uppercase tracking-[0.2em] text-zinc-500 mb-6 uppercase">Locations (demo addresses)</h3>
+                    <div class="space-y-6 text-sm">
+                        <div>
+                            <p class="text-white font-bold mb-1 uppercase tracking-tight">Estonia HQ (demo)</p>
+                            <p class="text-zinc-400">Example Street 12, 10111 Tallinn, Estonia</p>
+                        </div>
+                        <div>
+                            <p class="text-white font-bold mb-1 uppercase tracking-tight">Germany Satellite (demo)</p>
+                            <p class="text-zinc-400">Example Allee 8, 10115 Berlin, Germany</p>
+                        </div>
+                        <div class="bg-blue-600/5 border border-blue-500/20 p-4 rounded">
+                            <p class="text-blue-500 font-bold text-xs uppercase mb-1">By appointment only.</p>
+                            <p class="text-[10px] text-zinc-500 leading-relaxed uppercase">On-site visits are scheduled for workshops, audits, and delivery milestones.</p>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="p-6 bg-zinc-900/40 rounded border border-zinc-900">
+                    <p class="text-[10px] text-zinc-500 uppercase font-bold tracking-widest mb-4">Company Details (demo)</p>
+                    <div class="text-[11px] space-y-2 font-mono text-zinc-400">
+                        <p>Legal name: Celticverbs Technologies OÜ (demo)</p>
+                        <p>Company registration no.: [to be added]</p>
+                        <p>VAT no.: [to be added]</p>
+                    </div>
+                </section>
+
+            </div>
+        </div>
+    </main>
+
+    <section class="py-24 border-t border-zinc-900 px-6 md:px-12 text-center">
+        <div class="max-w-2xl mx-auto">
+            <p class="text-zinc-500 text-sm leading-relaxed">
+                Engagements begin with understanding constraints. Initial conversations focus on feasibility, risk, and operating realities before solution design.
+            </p>
+        </div>
+    </section>
+
+    <footer class="border-t border-[#262626] bg-[#0a0a0a] pt-20 pb-10 px-6">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-20">
+                <div class="col-span-1 md:col-span-1">
+                    <div class="flex items-center gap-3 mb-6">
+                        <div class="w-7 h-7 bg-white flex items-center justify-center rounded-[2px]">
+                            <span class="text-[#0a0a0a] font-black text-[10px] leading-none">ISL</span>
+                        </div>
+                        <span class="font-mono font-bold tracking-tighter text-sm uppercase text-white">Ironway Subinfra</span>
+                    </div>
+                    <p class="text-[10px] text-[#444444] leading-relaxed uppercase tracking-widest">
+                        Production-grade AI systems <br />
+                        for industrial operations.
+                    </p>
+                </div>
+                <div>
+                    <h4 class="text-white text-[10px] font-black uppercase tracking-[0.2em] mb-6">Capabilities</h4>
+                    <ul class="text-[#555555] text-[10px] font-bold uppercase tracking-widest space-y-4">
+                        <li><a href="Capabilities.html" class="hover:text-white transition-colors">Integration</a></li>
+                        <li><a href="Capabilities.html" class="hover:text-white transition-colors">Governance</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white text-[10px] font-black uppercase tracking-[0.2em] mb-6">Industries</h4>
+                    <ul class="text-[#555555] text-[10px] font-bold uppercase tracking-widest space-y-4">
+                        <li><a href="Industries.html" class="hover:text-white transition-colors">Manufacturing</a></li>
+                        <li><a href="Industries.html" class="hover:text-white transition-colors">Regulated</a></li>
+                    </ul>
+                </div>
+                <div class="text-right md:text-left">
+                    <h4 class="text-white text-[10px] font-black uppercase tracking-[0.2em] mb-6">Connection</h4>
+                    <p class="text-[#888888] font-mono text-xs mb-2">contact@ironwaysubinfra.com</p>
+                    <p class="text-[#444444] font-mono text-[10px] uppercase">Node: US-EAST-01</p>
+                </div>
+            </div>
+            <div class="pt-8 border-t border-[#1a1a1a] flex flex-col md:flex-row justify-between items-center gap-6">
+                <div class="flex items-center gap-6 text-[9px] font-mono text-[#444444] uppercase tracking-[0.2em]">
+                    <span>© <script>document.write(new Date().getFullYear())</script> IRONWAY SUBINFRA LIMITED</span>
+                    <span class="hidden md:inline">//</span>
+                    <span>All Systems Nominal</span>
+                </div>
+                <div class="flex items-center gap-4">
+                    <div class="flex items-center gap-2 px-3 py-1 bg-[#0d0d0d] border border-[#262626] rounded-sm text-emerald-500 font-mono text-[9px]">
+                        <span class="w-1.5 h-1.5 bg-emerald-500 rounded-full animate-pulse"></span>
+                        SYSTEM_STABLE
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+function toggleMobileMenu() {
+  document.getElementById('mobile-menu').classList.toggle('hidden');
+}
+</script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        window.onload = () => {
+            AOS.init({ duration: 800, once: true });
+            lucide.createIcons();
+        };
+    </script>
+</body>
+</html>
